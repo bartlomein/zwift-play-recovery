@@ -1,0 +1,7 @@
+include CONTRIBUTING.md
+recursive-include docs *.md
+global-exclude *.bin *.dat *.hex *.zip *.apk *.keystore *.pyc
+prune diagnostics
+prune captures
+prune firmware
+prune reports

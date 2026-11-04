@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zwift-play-recovery"
+version = "0.1.0"
+description = "Guided Bluetooth diagnostics and experimental recovery for Zwift Play"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Zwift Play Recovery contributors"}]
+dependencies = ["bleak>=3.0.2,<4", "cryptography>=46,<51"]
+classifiers = ["Development Status :: 3 - Alpha", "Environment :: Console", "Programming Language :: Python :: 3"]
+
+[project.scripts]
+zwift-play = "zwift_play_recovery.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
